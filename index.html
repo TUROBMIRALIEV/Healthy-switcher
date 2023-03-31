@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: rgb(35, 34, 34);
+        }
+
+        .navbar {
+            margin-left: 200px;
+        }
+
+        .icon-title {
+            color: green;
+            margin-left: 9px;
+        }
+
+        .nav-link {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 700;
+
+
+            /* identical to box height, or 643% */
+
+
+            color: #FFFFFF;
+
+        }
+
+        .nav-lin {
+            font-style: normal;
+            font-weight: 700;
+
+
+            /* identical to box height, or 643% */
+
+
+            color: green;
+        }
+
+        .nav-line {
+
+            background: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.1;
+            margin-top: 25px;
+        }
+
+        .m-title {
+            font-family: 'Helvetica Neue';
+            font-size: 72px;
+            line-height: 84px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: capitalize;
+
+            width: 1100px;
+            color: #FFFFFF;
+        }
+
+        .m-text {
+
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            /* or 162% */
+
+            text-align: center;
+            letter-spacing: -0.2px;
+            margin-bottom: 40px;
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            width: 600px;
+            text-align: center;
+            margin-left: 270px;
+        }
+
+        .links {
+            margin-left: 600px;
+        }
+
+        .main {
+            margin-left: 200px;
+        }
+
+        .m-link {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.2em;
+
+            /* Black */
+
+            color: #1A1A1A;
+            margin-left: 460px;
+            margin-top: 40px;
+            background: #34C759;
+            border-radius: 43px;
+        }
+
+        .c-title {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            /* identical to box height, or 188% */
+
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+        }
+
+        .c-text {
+
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 60px;
+            /* or 429% */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+
+        .cars {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 240px;
+        }
+
+        .kiko {
+            margin-left: 30px;
+            margin-bottom: 12px;
+        }
+
+        .chips-and {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .con-title {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 60px;
+            /* identical to box height, or 200% */
+
+            letter-spacing: 0.2em;
+
+            color: #D9D9D9;
+
+        }
+
+        .con-text {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            /* or 188% */
+            margin-top: 60px;
+            margin-bottom: 90px;
+            margin-left: 250px;
+            width: 740px;
+
+            color: #A6A6A6;
+        }
+
+        .lilo {
+
+            background: #252525;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+        }
+
+        .card-1 {
+            /* Primary */
+
+            background: #34C759;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            padding: 32px;
+        }
+
+        .card {
+            /* Primary */
+
+            background: #252525;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            border-radius: 6px;
+            padding: 32px;
+
+        }
+
+        .card-titl {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: -0.275px;
+            text-transform: capitalize;
+
+            color: #191919;
+            margin-bottom: 10px;
+        }
+
+        .cards {
+            margin-left: 200px;
+        }
+
+        .cont-title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 90px;
+            /* identical to box height, or 250% */
+
+            text-align: center;
+            letter-spacing: 0.2em;
+            text-transform: capitalize;
+
+            color: #D9D9D9;
+        }
+
+        .card-title {
+
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: -0.275px;
+            text-transform: capitalize;
+
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            /* or 138% */
+
+            letter-spacing: -0.1625px;
+
+            color: rgba(255, 255, 255, 0.5);
+
+        }
+
+        .ilo-title {
+
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 90px;
+            /* identical to box height, or 250% */
+
+            text-align: center;
+            letter-spacing: 0.2em;
+
+            color: #D9D9D9;
+
+        }
+
+        .cart {
+
+            background-color: #373535;
+            box-shadow: 0px 2px 5px rgba(57, 53, 53, 0.1);
+            border-radius: 6px;
+        }
+
+        .carts {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .carts-2 {
+            margin-top: 30px;
+        }
+
+        .viv {
+            height: 300px;
+        }
+
+        .carts-title {
+
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 30px;
+            /* identical to box height, or 94% */
+            margin-top: 30px;
+
+            color: #D9D9D9;
+            margin-left: 30px;
+        }
+
+        .carp-title {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height, or 133% */
+
+            letter-spacing: -0.15px;
+
+            color: #A4A8B2;
+            margin-left: 30px;
+        }
+
+        .carts-text {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            /* or 138% */
+
+            letter-spacing: -0.1625px;
+            width: 290px;
+            text-align: center;
+
+            color: #85878C;
+
+        }
+
+        .gig {
+            margin-left: 32px;
+            width: 150px;
+        }
+
+        .star-title {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            margin-top: 10px;
+            line-height: 30px;
+            /* identical to box height, or 250% */
+            text-align: center;
+
+            letter-spacing: 1.5px;
+
+            color: #B3B3B3;
+            margin-left: 11px;
+        }
+
+        .star-link {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 10px;
+            line-height: 40px;
+            /* identical to box height, or 400% */
+
+            text-align: center;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+
+            /* Dark Gray */
+
+            color: #252525;
+
+            background: #34C759;
+            padding: 1px 13px;
+            margin-left: 43px;
+            border-radius: 5px;
+        }
+
+        .stars {
+            margin-top: 28px;
+        }
+
+        .twenty {
+            margin-bottom: 30px;
+        }
+
+        .carw {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .images {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .lol-title {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 90px;
+            /* identical to box height, or 250% */
+
+            text-align: center;
+            letter-spacing: 0.2em;
+            text-transform: capitalize;
+
+            color: #D9D9D9;
+
+        }
+
+        .car-title {
+
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+
+            letter-spacing: -0.225px;
+
+            color: #FFFFFF;
+            margin-left: 24px;
+        }
+
+        .car-text {
+
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height, or 133% */
+
+            letter-spacing: -0.15px;
+
+            color: rgba(255, 255, 255, 0.5);
+            margin-left: 24px;
+        }
+
+        .icons {
+            margin-left: 30px;
+        }
+
+        .kik-title {
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 90px;
+            /* identical to box height, or 250% */
+
+            text-align: center;
+            letter-spacing: 0.2em;
+
+            color: #D9D9D9;
+            margin-bottom: 90px;
+        }
+
+        .imgsa {
+            display: flex;
+            align-items: center;
+            margin-left: 90px;
+        }
+        .twiterr{
+            background-color: #352f2f;
+        }
+        .cary{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background: #323030;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+margin-top: 120px;
+        }
+        .cic{
+            margin-left: 75px;
+        }
+        .cary-title{
+       
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+
+text-align: center;
+
+color: #FFFFFF;
+        }
+        .cary-text{
+            
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 60px;
+/* or 429% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+margin-left: 50px;
+mix-blend-mode: normal;
+opacity: 0.5;
+        }
+        .cari{
+            margin-top: 32px;
+        }
+        .cari-line{
+            background: #a76262;
+            color: red;
+            margin-top: 30px;
+        }
+        .icon-bia{
+            display: flex;
+            align-items: center;
+            margin-left: 500px;
+        }
+      .container-1{
+        width: 1140px;
+        margin: 0 auto;
+        background: #323030;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+margin-top: 120px;
+      }
+    .footer-title{
+        color: green;
+        
+    }
+    .foote-title{
+        text-align: center;
+        
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 60px;
+/* or 500% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #737373;
+margin-left: 460px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container flex">
+        <nav class="navbar flex mt-10">
+            <div class="icon-healthy flex">
+                <img src="./imgs/Logo (1).png" alt="">
+                <h1 class="icon-title">
+                    HEALTHY SWITCHER
+                </h1>
+
+            </div>
+            <div class="links flex ">
+                <a href="#" class="nav-lin">Menu</a>
+                <a href="#" class="nav-link ml-11">Recipes</a>
+                <a href="#" class="nav-link ml-11">Chefs</a>
+                <a href="#" class="nav-link ml-11">Contacts</a>
+
+            </div>
+        </nav>
+    </div>
+    <hr class="nav-line">
+    <main class="main mt-20">
+        <h1 class="m-title text-center">Your favourite food
+            delivered hot & fresh</h1>
+        <p class="m-text text-center">
+            HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you can cook a fresh
+            homemade dinner in just 15 minutes.
+        </p>
+        <a href="#" class="m-link p-5">Order Now</a>
+        <div class="cars flex mt-16">
+            <div class="card">
+                <img src="./imgs/Avatar (1).png" alt="" class="kiko">
+                <h1 class="c-title">
+                    Today 10:00 am - 7:00 pm
+                </h1>
+                <p class="c-text">
+                    Working hours
+                </p>
+            </div>
+            <div class="card">
+                <img src="./imgs/Avatar (1).png" alt="" class="kiko">
+                <h1 class="c-title">
+                    Today 10:00 am - 7:00 pm
+                </h1>
+                <p class="c-text">
+                    Working hours
+                </p>
+            </div>
+            <div class="card">
+                <img src="./imgs/Avatar (1).png" alt="" class="kiko">
+                <h1 class="c-title">
+                    Today 10:00 am - 7:00 pm
+                </h1>
+                <p class="c-text">
+                    Working hours
+                </p>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <div class="lilo mt-28">
+            <h1 class="con-title text-center text-white">
+                The Basics Of Healthy Food
+            </h1>
+            <p class="con-text text-center text-white">
+                In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur
+                voluptate
+                est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
+            </p>
+            <div class="chips-and flex">
+                <div class="mimo">
+                    <img src="./imgs/placeholder.png" alt="">
+                </div>
+
+                <div class="icons">
+                    <img src="./imgs/placeholder (1).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="cont-title text-center mt-20">
+            How it works
+        </h1>
+        <div class="cards flex">
+            <div class="card-1">
+                <h1 class="card-titl">
+                    Pick meals
+
+                </h1>
+                <img src="./imgs/Rectangle.png" alt="">
+                <p class="card-text  mb-1">
+                    Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie
+                    options.
+                </p>
+            </div>
+            <div class="card ml-7">
+                <h1 class="card-title">
+                    Pick meals
+
+                </h1>
+                <img src="./imgs/Rectangle (1).png" alt="">
+                <p class="card-text  mb-1">
+                    Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie
+                    options.
+                </p>
+            </div>
+            <div class="card ml-7">
+                <h1 class="card-title">
+                    Pick meals
+
+                </h1>
+                <img src="./imgs//Rectangle (1).png" alt="">
+                <p class="card-text  mb-1">
+                    Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie
+                    options.
+                </p>
+            </div>
+            <div class="card ml-7">
+                <h1 class="card-title">
+                    Pick meals
+
+                </h1>
+                <img src="./imgs//Rectangle (1).png " alt="">
+                <p class="card-text mb-1">
+                    Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie
+                    options.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="ilo-title text-center">
+            Dish Of The Day
+        </h1>
+        <div class="carts flex">
+
+            <div class="cart">
+                <img src="./imgs/placeholder (2).png" alt="" class="viv">
+                <h1 class="carts-title">
+                    Featured Meal
+                </h1>
+                <h2 class="carp-title">
+                    Served with french fries + drink
+                </h2>
+                <p class="carts-text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty
+                    and more...
+                </p>
+                <div class="twenty flex">
+                    <div class="stars flex">
+                        <img src="./imgs/stars.png" alt="" class="gig">
+                        <h1 class="star-title">
+                            12
+                        </h1>
+                        <a href="#" class="star-link">ORDER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart ml-8">
+                <img src="./imgs/placeholder (2).png" alt="" class="viv">
+                <h1 class="carts-title">
+                    Featured Meal
+                </h1>
+                <h2 class="carp-title">
+                    Served with french fries + drink
+                </h2>
+                <p class="carts-text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty
+                    and more...
+                </p>
+                <div class="twenty ">
+                    <div class="stars flex">
+                        <img src="./imgs/stars.png" alt="" class="gig">
+                        <h1 class="star-title">
+                            12
+                        </h1>
+                        <a href="#" class="star-link">ORDER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart  ml-8">
+                <img src="./imgs/placeholder (2).png" alt="" class="viv">
+                <h1 class="carts-title">
+                    Featured Meal
+                </h1>
+                <h2 class="carp-title">
+                    Served with french fries + drink
+                </h2>
+                <p class="carts-text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty
+                    and more...
+                </p>
+                <div class="twenty ">
+                    <div class="stars flex">
+                        <img src="./imgs/stars.png" alt="" class="gig">
+                        <h1 class="star-title">
+                            12
+                        </h1>
+                        <a href="#" class="star-link">ORDER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carts flex">
+
+            <div class="cart">
+                <img src="./imgs/placeholder (2).png" alt="" class="viv">
+                <h1 class="carts-title">
+                    Featured Meal
+                </h1>
+                <h2 class="carp-title">
+                    Served with french fries + drink
+                </h2>
+                <p class="carts-text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty
+                    and more...
+                </p>
+                <div class="twenty flex">
+                    <div class="stars flex">
+                        <img src="./imgs/stars.png" alt="" class="gig">
+                        <h1 class="star-title">
+                            12
+                        </h1>
+                        <a href="#" class="star-link">ORDER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart ml-8">
+                <img src="./imgs/placeholder (2).png" alt="" class="viv">
+                <h1 class="carts-title">
+                    Featured Meal
+                </h1>
+                <h2 class="carp-title">
+                    Served with french fries + drink
+                </h2>
+                <p class="carts-text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty
+                    and more...
+                </p>
+                <div class="twenty ">
+                    <div class="stars flex">
+                        <img src="./imgs/stars.png" alt="" class="gig">
+                        <h1 class="star-title">
+                            12
+                        </h1>
+                        <a href="#" class="star-link">ORDER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart  ml-8">
+                <img src="./imgs/placeholder (2).png" alt="" class="viv">
+                <h1 class="carts-title">
+                    Featured Meal
+                </h1>
+                <h2 class="carp-title">
+                    Served with french fries + drink
+                </h2>
+                <p class="carts-text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty
+                    and more...
+                </p>
+                <div class="twenty ">
+                    <div class="stars flex">
+                        <img src="./imgs/stars.png" alt="" class="gig">
+                        <h1 class="star-title">
+                            12
+                        </h1>
+                        <a href="#" class="star-link">ORDER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="container mt-28">
+        <h1 class="lol-title text-center mb-20">
+            This month's chefs
+        </h1>
+        <div class="carw flex">
+            <div class="icon-name ">
+                <div class="heads  flex">
+                    <img src="./imgs/Avatar (1).png" alt="" class="nino mb-8">
+                    <div class="texts">
+                        <h1 class="car-title">
+                            Gregory Flores
+                        </h1>
+                        <p class="car-text">
+                            Chef of the cold
+                        </p>
+                    </div>
+                </div>
+
+                <div class="images flex">
+                    <img src="./imgs/big img.png" alt="">
+                    <img src="./imgs/img 2.png" alt="" class="nino ml-7">
+                    <img src="./imgs/img 3.png" alt=" " class="nino ml-7">
+                </div>
+            </div>
+            <div class="icon-name ">
+                <div class="heads  flex">
+                    <img src="./imgs/Avatar (1).png" alt="" class="nino mb-8">
+                    <div class="texts">
+                        <h1 class="car-title">
+                            Gregory Flores
+                        </h1>
+                        <p class="car-text">
+                            Chef of the cold
+                        </p>
+                    </div>
+                </div>
+
+                <div class="images flex">
+                    <img src="./imgs/big img.png" alt="">
+                    <img src="./imgs/img 2.png" alt="" class="nino ml-7">
+                    <img src="./imgs/img 3.png" alt="" class="nino ml-7">
+                </div>
+            </div>
+            <div class="icon-name ">
+                <div class="heads  flex">
+                    <img src="./imgs/Avatar (1).png" alt="" class="nino  mb-8">
+                    <div class="texts">
+                        <h1 class="car-title">
+                            Gregory Flores
+                        </h1>
+                        <p class="car-text">
+                            Chef of the cold
+                        </p>
+                    </div>
+                </div>
+
+                <div class="images flex">
+                    <img src="./imgs/big img.png" alt="">
+                    <img src="./imgs/img 2.png" alt="" class="nino ml-7">
+                    <img src="./imgs/img 3.png" alt="" class="nino ml-7">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="kik-title text-center mt-28">
+            Recipes From Our Chefs
+        </h1>
+        <div class="imgsa flex">
+            <div class="icons">
+                <img src="./imgs/Event Card.png" alt="">
+            </div>
+            <div class="icons">
+                <img src="./imgs/Events Card.png" alt="">
+                <img src="./imgs/Events Card (1).png" alt="" class="viev mt-8">
+                <img src="./imgs/Events Card (2).png" alt="" class="vso mt-8">
+            </div>
+        </div>
+    </div>
+   <div class="container-1">
+    <div class="cary flex mb-10">
+        <div class="cari">
+            <img src="./imgs/ic_watch_later.svg" alt="" class="cic">
+            <h1 class="cary-title text-center">
+                Today 10:00 am - 7:00 pm
+            </h1>
+            <p class="cary-text text-center">
+                Working hours
+            </p>
+        </div>
+        <div class="cari">
+            <img src="./imgs/ic_watch_later.svg" alt="" class="cic">
+            <h1 class="cary-title text-center">
+                Today 10:00 am - 7:00 pm
+            </h1>
+            <p class="cary-text text-center">
+                Working hours
+            </p>
+        </div>
+        <div class="cari">
+            <img src="./imgs/ic_watch_later.svg" alt="" class="cic">
+            <h1 class="cary-title text-center">
+                Today 10:00 am - 7:00 pm
+            </h1>
+            <p class="cary-text text-center">
+                Working hours
+            </p>
+         
+           
+        </div>
+    
+
+    </div>
+    <div class="footer">
+        <div class="icon-bia flex">
+            <img src="./imgs/Logo.png" alt="">
+        <h1 class="footer-title ">
+            HEALTHY SWITCHER
+        </h1>
+        </div>
+        <h1 class="foote-title">
+            © Designed by Yellow Snow. All Rights Reserved. 
+        </h1>
+    </div>
+   </div>
+ 
+</body>
+
+</html>
